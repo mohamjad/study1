@@ -201,6 +201,7 @@ export const studyDays: Day[] = [
           { id: 'day1-java-4-task-7', description: 'Method overloading vs overriding: 3 examples where signatures differ in parameters only. Override vs overload: signature rules + access level rule (Q25).', completed: false },
           { id: 'day1-java-4-task-8', description: 'Scanner + basic I/O: Scanner sc = new Scanner(System.in); nextInt(), nextLine(). What is System.in? (InputStream static field; Q3, Q13).', completed: false },
           { id: 'day1-java-4-task-9', description: 'Trivial Java facts: Bytecode is machine-independent (Q1). main is entry point (Q7). println is PrintStream method.', completed: false },
+          { id: 'day1-java-4-task-10', description: 'Switch statements: Write 3-4 examples. Syntax: switch(expression), case labels, break statements, default case. Test fall-through behavior (missing break).', completed: false },
         ],
         flashcards: [
           { id: 'java-fund-1', front: 'Local variables vs fields: initialization rules', back: 'Local variables: must be initialized before use or compile error. Fields: get default values automatically (0, 0.0, null, false).', known: false },
@@ -212,6 +213,7 @@ export const studyDays: Day[] = [
           { id: 'java-fund-7', front: 'Overloading vs overriding: signature rules', back: 'Overloading: same name, different parameter list (number/type). Overriding: same signature, compatible return type, access level cannot be more restrictive.', known: false },
           { id: 'java-fund-8', front: 'Scanner basics: System.in', back: 'System.in is a static InputStream field. Scanner sc = new Scanner(System.in); nextInt() reads int, nextLine() reads String. Be careful with mixing nextInt() and nextLine().', known: false },
           { id: 'java-fund-9', front: 'Java trivia: bytecode, main, println', back: 'Bytecode is machine-independent (JVM executes it). main(String[] args) is the entry point. System.out.println() calls PrintStream.println() method.', known: false },
+          { id: 'java-fund-10', front: 'Switch statement syntax and rules', back: 'switch(expression) { case value1: statements; break; case value2: statements; break; default: statements; }. Expression must be byte/short/char/int/String/enum. Without break, execution falls through to next case.', known: false },
         ],
       },
       {
