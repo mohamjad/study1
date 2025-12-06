@@ -80,7 +80,7 @@ export const studyDays: Day[] = [
         timeRange: '11:30–13:00',
         title: '[JAVA] Arrays & References',
         topic: 'Java',
-        description: 'Key concepts: Jagged arrays, Arrays are objects passed by reference, Arrays utility methods, Scanner',
+        description: 'Key concepts: Jagged arrays, Arrays are references (NOT copies), Arrays passed by reference, Arrays of objects, Arrays utility methods, Scanner',
         completed: false,
         tasks: [
           {
@@ -95,7 +95,7 @@ export const studyDays: Day[] = [
           },
           {
             id: 'day1-java-3-task-3',
-            description: 'Recreate and solve questions analogous to mock exam Q19 and Q30 (arrays passed by reference, reference reassignment).',
+            description: 'Arrays as references: Recreate Q19 (arrays passed to methods) and Q30 (ma = ya reassignment). Explicit: arrays are references, NOT copies. Changes to one affect the other.',
             completed: false,
           },
           {
@@ -185,8 +185,38 @@ export const studyDays: Day[] = [
         ],
       },
       {
+        id: 'day1-java-4',
+        timeRange: '19:00–20:00',
+        title: '[JAVA] Java Fundamentals & Edge Cases',
+        topic: 'Java',
+        description: 'Local vs field defaults, static vs instance, arrays as references, interfaces constants, access levels, Scanner basics',
+        completed: false,
+        tasks: [
+          { id: 'day1-java-4-task-1', description: 'Local vs field defaults: Write 3-4 code snippets that DON\'T compile (uninitialized locals) vs ones that DO (fields get defaults). Test Q10, Q11, Q15 patterns.', completed: false },
+          { id: 'day1-java-4-task-2', description: 'Static vs instance: Write 3 "will this compile?" snippets. Test Q22 pattern: accessing instance field from main without object (non-static in static context).', completed: false },
+          { id: 'day1-java-4-task-3', description: 'Arrays as references: 5-10 micro-questions. "What prints?" for ma = ya. "How many references created?" for new int[10] (Q8). Explicit: arrays are references, NOT copies.', completed: false },
+          { id: 'day1-java-4-task-4', description: 'Arrays of objects: Circle[] arr = new Circle[10]; semantics (Q26). What is created? References vs objects.', completed: false },
+          { id: 'day1-java-4-task-5', description: 'Interfaces constants: Empty interface is valid (Q9). Fields are public static final, can\'t modify (Q35). Test: ++x on interface field is illegal.', completed: false },
+          { id: 'day1-java-4-task-6', description: 'Access levels + packages: Explicit p1/p2 scenarios from Q28-Q29. Default (package) vs public. Create two packages and test access patterns.', completed: false },
+          { id: 'day1-java-4-task-7', description: 'Method overloading vs overriding: 3 examples where signatures differ in parameters only. Override vs overload: signature rules + access level rule (Q25).', completed: false },
+          { id: 'day1-java-4-task-8', description: 'Scanner + basic I/O: Scanner sc = new Scanner(System.in); nextInt(), nextLine(). What is System.in? (InputStream static field; Q3, Q13).', completed: false },
+          { id: 'day1-java-4-task-9', description: 'Trivial Java facts: Bytecode is machine-independent (Q1). main is entry point (Q7). println is PrintStream method.', completed: false },
+        ],
+        flashcards: [
+          { id: 'java-fund-1', front: 'Local variables vs fields: initialization rules', back: 'Local variables: must be initialized before use or compile error. Fields: get default values automatically (0, 0.0, null, false).', known: false },
+          { id: 'java-fund-2', front: 'Static vs instance: non-static in static context', back: 'Cannot access instance fields/methods from static context without an object. main() is static, so need object to access instance members.', known: false },
+          { id: 'java-fund-3', front: 'Arrays are references, not copies', back: 'When you assign one array variable to another (ma = ya), both reference the same array. Changes to one affect the other. new int[10] creates one array object, one reference.', known: false },
+          { id: 'java-fund-4', front: 'Arrays of objects: Circle[] arr = new Circle[10]', back: 'Creates array of 10 Circle references, all initially null. No Circle objects are created. Must instantiate each: arr[i] = new Circle(...).', known: false },
+          { id: 'java-fund-5', front: 'Interface fields are public static final', back: 'All fields in interfaces are implicitly public static final (constants). Cannot modify: ++x is illegal. Empty interface is valid.', known: false },
+          { id: 'java-fund-6', front: 'Access levels: default (package-private) vs public', back: 'Default: accessible in same package only. Public: accessible from any package. Test with p1/p2 package scenarios.', known: false },
+          { id: 'java-fund-7', front: 'Overloading vs overriding: signature rules', back: 'Overloading: same name, different parameter list (number/type). Overriding: same signature, compatible return type, access level cannot be more restrictive.', known: false },
+          { id: 'java-fund-8', front: 'Scanner basics: System.in', back: 'System.in is a static InputStream field. Scanner sc = new Scanner(System.in); nextInt() reads int, nextLine() reads String. Be careful with mixing nextInt() and nextLine().', known: false },
+          { id: 'java-fund-9', front: 'Java trivia: bytecode, main, println', back: 'Bytecode is machine-independent (JVM executes it). main(String[] args) is the entry point. System.out.println() calls PrintStream.println() method.', known: false },
+        ],
+      },
+      {
         id: 'day1-evening',
-        timeRange: '19:30–21:00',
+        timeRange: '20:00–21:00',
         title: '[JAVA] Java Review',
         topic: 'Java',
         description: 'Evening review session',

@@ -137,6 +137,11 @@ function App() {
           <p className="text-gray-600 mb-1">
             Comprehensive 6-day study plan for ES1036 (Java) & NM1411 (Linear Algebra) exams
           </p>
+          <div className="bg-green-50 border-l-4 border-green-600 p-3 rounded-r-lg mb-3">
+            <p className="text-sm text-green-800 font-medium">
+              ✓ 1:1 mapping to ES1036 (Java) and NM1411 (Linear Algebra) UWO course content
+            </p>
+          </div>
           <p className="text-sm text-gray-500 italic mb-4">
             by Mohammed Amjad
           </p>
