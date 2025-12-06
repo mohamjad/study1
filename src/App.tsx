@@ -10,11 +10,36 @@ import ExamDayStrategy from './components/ExamDayStrategy';
 function App() {
   const [days, setDays] = useState<Day[]>(() => {
     const saved = loadDays();
-    if (saved) {
-      // Merge dates from fresh studyDays while preserving user progress
+    if (saved && saved.length === studyDays.length) {
+      // Merge dates and structure from fresh studyDays while preserving user progress
       return saved.map((savedDay: Day) => {
         const freshDay = studyDays.find(d => d.dayNumber === savedDay.dayNumber);
-        return freshDay ? { ...savedDay, date: freshDay.date } : savedDay;
+        if (freshDay) {
+          // Merge: use fresh structure but preserve completed states
+          return {
+            ...freshDay,
+            blocks: freshDay.blocks.map(freshBlock => {
+              const savedBlock = savedDay.blocks.find(b => b.id === freshBlock.id);
+              if (savedBlock) {
+                // Preserve completed states
+                return {
+                  ...freshBlock,
+                  completed: savedBlock.completed,
+                  tasks: freshBlock.tasks.map(freshTask => {
+                    const savedTask = savedBlock.tasks.find(t => t.id === freshTask.id);
+                    return savedTask ? { ...freshTask, description: freshTask.description } : freshTask;
+                  }),
+                  flashcards: freshBlock.flashcards?.map(freshCard => {
+                    const savedCard = savedBlock.flashcards?.find(c => c.id === freshCard.id);
+                    return savedCard ? { ...freshCard, known: savedCard.known } : freshCard;
+                  }),
+                };
+              }
+              return freshBlock;
+            }),
+          };
+        }
+        return savedDay;
       });
     }
     return studyDays;

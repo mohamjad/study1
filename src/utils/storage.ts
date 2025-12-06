@@ -2,12 +2,24 @@ import type { Day, Progress } from '../types';
 
 const STORAGE_KEY = 'study-planner-data';
 const PROGRESS_KEY = 'study-planner-progress';
+const VERSION_KEY = 'study-planner-version';
+const CURRENT_VERSION = '2.0.0'; // Increment this when data structure changes
 
 export const saveDays = (days: Day[]) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(days));
+  localStorage.setItem(VERSION_KEY, CURRENT_VERSION); // Ensure version is set
 };
 
 export const loadDays = (): Day[] | null => {
+  // Check version - if mismatch, clear old data
+  const savedVersion = localStorage.getItem(VERSION_KEY);
+  if (savedVersion !== CURRENT_VERSION) {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(PROGRESS_KEY);
+    localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
+    return null; // Force fresh data load
+  }
+  
   const data = localStorage.getItem(STORAGE_KEY);
   return data ? JSON.parse(data) : null;
 };
