@@ -105,7 +105,12 @@ export const studyDays: Day[] = [
           },
           {
             id: 'day1-java-3-task-5',
-            description: 'Scanner + reading arrays: Read n, then n ints into an array using Scanner, matching Lab 4 "ReadingArrayExample".',
+            description: 'Lab 4 - ReadingArrayExample: Re-implement from scratch. Use Scanner, read length, loop through array, use .length, Arrays.toString. One clean pass from blank file.',
+            completed: false,
+          },
+          {
+            id: 'day1-java-3-task-6',
+            description: 'Lab 4 - SequenceOperations: Re-implement from scratch with methods: getTotal(double[]), getAverage(double[]), getHighest(double[]), getReverse(double[]). One clean pass from blank file.',
             completed: false,
           },
         ],
@@ -253,6 +258,9 @@ export const studyDays: Day[] = [
           { id: 'day2-java-2-task-1', description: 'Animal hierarchy: Animal with name, age, makeSound(). Dog extends Animal: breed, override makeSound(). Cat extends Animal: color, override makeSound(). Test polymorphism: Animal a = new Dog(...); a.makeSound();', completed: false },
           { id: 'day2-java-2-task-2', description: 'GeometricObject hierarchy: Abstract GeometricObject with abstract area(). Rectangle & Triangle implement area().', completed: false },
           { id: 'day2-java-2-task-3', description: 'Recreate mock Q36 pattern: Person → Employee → MyProject. Trace constructor calls and toString().', completed: false },
+          { id: 'day2-java-2-task-4', description: 'PreLab 5 - Method Overloading: Rebuild overloaded print/abs example from scratch. One clean pass from blank file, no notes.', completed: false },
+          { id: 'day2-java-2-task-5', description: 'PreLab 5 - File/ImageFile: Rebuild File → ImageFile hierarchy with protected, override getFileInfo(), call through printFileInfo(). One clean pass from blank file, no notes.', completed: false },
+          { id: 'day2-java-2-task-6', description: 'PreLab 5 - Animal Hierarchy: Rebuild Animal → Cat/Dog/Duck hierarchy with say() override and Task2Demo using base-class references. One clean pass from blank file, no notes.', completed: false },
         ],
       },
       {
