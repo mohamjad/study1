@@ -74,9 +74,8 @@ export default function TimeBlock({
                       <p className="text-sm font-medium text-gray-700 mb-1">{problemSet.description}</p>
                     )}
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-sm font-semibold text-blue-600">Section {problemSet.section}:</span>
-                      <span className="text-sm text-gray-600">
-                        Problems {problemSet.numbers.length > 0 ? problemSet.numbers.join(', ') : 'See description above'}
+                      <span className="text-sm font-semibold text-blue-600">
+                        Anton: {problemSet.section} #{problemSet.numbers.length > 0 ? problemSet.numbers.join(',') : 'See description above'}
                       </span>
                     </div>
                   </div>

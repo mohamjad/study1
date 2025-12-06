@@ -9,7 +9,7 @@ export const studyDays: Day[] = [
       {
         id: 'day1-java-1',
         timeRange: '8:00–10:00',
-        title: 'Java OOP Crash Course',
+        title: '[JAVA] Java OOP Crash Course',
         topic: 'Java',
         description: 'Focus topics: Classes and objects, Constructors, this keyword, toString(), Static vs instance members.',
         completed: false,
@@ -48,7 +48,7 @@ export const studyDays: Day[] = [
       {
         id: 'day1-java-2',
         timeRange: '10:00–11:30',
-        title: 'Classes Practice',
+        title: '[JAVA] Classes Practice',
         topic: 'Java',
         description: 'Code from scratch, no copy-paste',
         completed: false,
@@ -78,7 +78,7 @@ export const studyDays: Day[] = [
       {
         id: 'day1-java-3',
         timeRange: '11:30–13:00',
-        title: 'Arrays & References',
+        title: '[JAVA] Arrays & References',
         topic: 'Java',
         description: 'Key concepts: Jagged arrays, Arrays are objects passed by reference, Arrays utility methods, Scanner',
         completed: false,
@@ -105,12 +105,12 @@ export const studyDays: Day[] = [
           },
           {
             id: 'day1-java-3-task-5',
-            description: 'Lab 4 - ReadingArrayExample: Re-implement from scratch. Use Scanner, read length, loop through array, use .length, Arrays.toString. One clean pass from blank file.',
+            description: 'Redo Lab 4: ReadingArrayExample from scratch (ES1036A Lab 4 PDF). Use Scanner, read length, loop through array, use .length, Arrays.toString.',
             completed: false,
           },
           {
             id: 'day1-java-3-task-6',
-            description: 'Lab 4 - SequenceOperations: Re-implement from scratch with methods: getTotal(double[]), getAverage(double[]), getHighest(double[]), getReverse(double[]). One clean pass from blank file.',
+            description: 'Redo Lab 4: SequenceOperations from scratch (ES1036A Lab 4 PDF). Methods: getTotal(double[]), getAverage(double[]), getHighest(double[]), getReverse(double[]).',
             completed: false,
           },
         ],
@@ -118,7 +118,7 @@ export const studyDays: Day[] = [
       {
         id: 'day1-linalg-1',
         timeRange: '14:00–15:30',
-        title: 'Matrix Operations',
+        title: '[LIN ALG] Matrix Operations',
         topic: 'Linear Algebra',
         description: 'Practice matrix operations',
         completed: false,
@@ -131,25 +131,15 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '1.3',
-            description: 'Addition / scalar mult (10 problems)',
-            numbers: [1, 3, 5, 7, 13, 15, 'T/F a', 'T/F c'],
-          },
-          {
-            section: '1.3',
-            description: 'Matrix multiplication (10 problems)',
-            numbers: [11, 17, 19, 21, 23, 25],
-          },
-          {
-            section: '1.3',
-            description: 'Transpose + properties (5–10 problems)',
-            numbers: [27, 29, 31, 33, 'T/F e', 'T/F k'],
+            description: 'Matrix operations',
+            numbers: [1, 3, 5, 7, 11, 13, 15, 17, 19, 23, 27, 29, 31],
           },
         ],
       },
       {
         id: 'day1-linalg-2',
         timeRange: '15:30–17:30',
-        title: 'Row Reduction Bootcamp',
+        title: '[LIN ALG] Row Reduction Bootcamp',
         topic: 'Linear Algebra',
         description: 'Master RREF',
         completed: false,
@@ -160,17 +150,12 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '1.2',
-            description: 'Warm-up (3×3)',
-            numbers: [1, 3, 5, 7, 9, 11, 13],
-          },
-          {
-            section: '1.2',
-            description: 'Harder / "almost singular" and 4×4 style',
-            numbers: [15, 17, 19],
+            description: 'Row reduction bootcamp',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
           },
           {
             section: '1.5',
-            description: 'Row-operations for inverse, but still just RREF practice',
+            description: 'Row reduction bootcamp',
             numbers: [1, 5, 9, 13, 17, 21, 25],
           },
         ],
@@ -178,7 +163,7 @@ export const studyDays: Day[] = [
       {
         id: 'day1-linalg-3',
         timeRange: '17:30–19:00',
-        title: 'Leading vs Free Variables',
+        title: '[LIN ALG] Leading vs Free Variables',
         topic: 'Linear Algebra',
         description: 'Pivot columns = leading variables. Non-pivot columns = free variables.',
         completed: false,
@@ -189,30 +174,20 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '1.2',
-            description: 'Systems with free variables',
+            description: 'Leading/free variables and Ax=b',
             numbers: [21, 23, 25, 27],
           },
           {
             section: '1.6',
-            description: 'Solve Ax=b with parameters',
+            description: 'Leading/free variables and Ax=b',
             numbers: [1, 3, 5, 7, 13, 15, 17],
-          },
-          {
-            section: '4.8',
-            description: 'Identify leading/free from RREF',
-            numbers: [1, 3, 5, 7],
-          },
-          {
-            section: '4.9',
-            description: 'Identify leading/free from RREF',
-            numbers: [1, 2, 5, 6, 9, 13],
           },
         ],
       },
       {
         id: 'day1-evening',
         timeRange: '19:30–21:00',
-        title: 'Java Review',
+        title: '[JAVA] Java Review',
         topic: 'Java',
         description: 'Evening review session',
         completed: false,
@@ -231,7 +206,7 @@ export const studyDays: Day[] = [
       {
         id: 'day2-java-1',
         timeRange: '8:00–9:30',
-        title: 'Inheritance Theory',
+        title: '[JAVA] Inheritance Theory',
         topic: 'Java',
         description: 'extends keyword, super() constructor call, method overriding',
         completed: false,
@@ -250,7 +225,7 @@ export const studyDays: Day[] = [
       {
         id: 'day2-java-2',
         timeRange: '9:30–11:30',
-        title: 'Inheritance Practice',
+        title: '[JAVA] Inheritance Practice',
         topic: 'Java',
         description: 'Animal hierarchy, GeometricObject hierarchy',
         completed: false,
@@ -258,15 +233,15 @@ export const studyDays: Day[] = [
           { id: 'day2-java-2-task-1', description: 'Animal hierarchy: Animal with name, age, makeSound(). Dog extends Animal: breed, override makeSound(). Cat extends Animal: color, override makeSound(). Test polymorphism: Animal a = new Dog(...); a.makeSound();', completed: false },
           { id: 'day2-java-2-task-2', description: 'GeometricObject hierarchy: Abstract GeometricObject with abstract area(). Rectangle & Triangle implement area().', completed: false },
           { id: 'day2-java-2-task-3', description: 'Recreate mock Q36 pattern: Person → Employee → MyProject. Trace constructor calls and toString().', completed: false },
-          { id: 'day2-java-2-task-4', description: 'PreLab 5 - Method Overloading: Rebuild overloaded print/abs example from scratch. One clean pass from blank file, no notes.', completed: false },
-          { id: 'day2-java-2-task-5', description: 'PreLab 5 - File/ImageFile: Rebuild File → ImageFile hierarchy with protected, override getFileInfo(), call through printFileInfo(). One clean pass from blank file, no notes.', completed: false },
-          { id: 'day2-java-2-task-6', description: 'PreLab 5 - Animal Hierarchy: Rebuild Animal → Cat/Dog/Duck hierarchy with say() override and Task2Demo using base-class references. One clean pass from blank file, no notes.', completed: false },
+          { id: 'day2-java-2-task-4', description: 'Redo PreLab 5 Task 2: Animal/Cat/Dog/Duck hierarchy with say() override and Task2Demo using base-class references once from blank (ES1036A PreLab5 PDF).', completed: false },
+          { id: 'day2-java-2-task-5', description: 'Redo PreLab 5: File/ImageFile example once from blank (ES1036A PreLab5 PDF). File → ImageFile hierarchy with protected, override getFileInfo(), call through printFileInfo().', completed: false },
+          { id: 'day2-java-2-task-6', description: 'Redo PreLab 5: Method Overloading (overloaded print/abs example) once from blank (ES1036A PreLab5 PDF).', completed: false },
         ],
       },
       {
         id: 'day2-java-3',
         timeRange: '11:30–13:00',
-        title: 'Abstract Classes',
+        title: '[JAVA] Abstract Classes',
         topic: 'Java',
         description: 'Cannot instantiate, concrete subclasses must implement abstract methods',
         completed: false,
@@ -279,7 +254,7 @@ export const studyDays: Day[] = [
       {
         id: 'day2-linalg-1',
         timeRange: '14:00–15:00',
-        title: 'Span & Linear Independence Theory',
+        title: '[LIN ALG] Span & Linear Independence Theory',
         topic: 'Linear Algebra',
         description: 'Span = all linear combinations, Linear independence test',
         completed: false,
@@ -296,7 +271,7 @@ export const studyDays: Day[] = [
       {
         id: 'day2-linalg-2',
         timeRange: '15:00–17:00',
-        title: 'Linear Independence Drills',
+        title: '[LIN ALG] Linear Independence Drills',
         topic: 'Linear Algebra',
         description: '25 problems: Are vectors linearly independent? 15 problems: Is vector b in span?',
         completed: false,
@@ -306,41 +281,21 @@ export const studyDays: Day[] = [
         ],
         textbookProblems: [
           {
-            section: '4.4',
-            description: 'Are these vectors linearly independent? (25 problems)',
-            numbers: [1, 3, 5, 7, 11, 13, 15, 17, 19, 25, 27, 29],
-          },
-          {
             section: '4.3',
-            description: 'Additional span/LI style problems',
-            numbers: [11, 13, 15, 17],
-          },
-          {
-            section: '4.3',
-            description: 'Is (b) in span({v₁, v₂, v₃})? (15 problems)',
-            numbers: [1, 3, 5, 7, 9, 19],
+            description: 'Span and linear independence',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
           },
           {
             section: '4.4',
-            description: 'Span checks via systems',
-            numbers: [23, 31, 33],
-          },
-          {
-            section: '4.3',
-            description: 'Concept check (flashcard alignment)',
-            numbers: ['T/F a', 'T/F c', 'T/F f'],
-          },
-          {
-            section: '4.4',
-            description: 'Concept check (flashcard alignment)',
-            numbers: ['T/F a', 'T/F d', 'T/F g'],
+            description: 'Span and linear independence',
+            numbers: [1, 3, 5, 7, 11, 13, 15, 17, 19, 23, 25, 27, 29, 31, 33],
           },
         ],
       },
       {
         id: 'day2-linalg-3',
         timeRange: '17:00–19:00',
-        title: 'Rank, Nullity, Basis',
+        title: '[LIN ALG] Rank, Nullity, Basis',
         topic: 'Linear Algebra',
         description: 'rank(A) + nullity(A) = # of columns',
         completed: false,
@@ -352,34 +307,14 @@ export const studyDays: Day[] = [
         ],
         textbookProblems: [
           {
+            section: '4.8',
+            description: 'Rank, nullity, and basis',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27],
+          },
+          {
             section: '4.9',
-            description: 'Find rank and nullity (20 problems)',
+            description: 'Rank, nullity, and basis',
             numbers: [1, 2, 5, 6, 9, 13, 17, 21, 23],
-          },
-          {
-            section: '4.8',
-            description: 'Find rank and nullity (additional)',
-            numbers: [11, 13, 15, 17, 19, 25],
-          },
-          {
-            section: '4.8',
-            description: 'Basis for column space (pivot columns → basis)',
-            numbers: [1, 3, 5, 7, 9],
-          },
-          {
-            section: '4.5',
-            description: 'Basis-type questions',
-            numbers: [1, 3, 5, 7, 9],
-          },
-          {
-            section: '4.8',
-            description: 'Basis for null space (explicitly)',
-            numbers: [21, 23, 27],
-          },
-          {
-            section: '4.9',
-            description: 'Solve Ax=0 and write basis',
-            numbers: [5, 6, 9, 13, 17, 21, 23],
           },
         ],
       },
@@ -392,7 +327,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-java-1',
         timeRange: '8:00–9:30',
-        title: 'Interfaces',
+        title: '[JAVA] Interfaces',
         topic: 'Java',
         description: 'Interface methods are public abstract by default',
         completed: false,
@@ -404,7 +339,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-java-2',
         timeRange: '9:30–11:00',
-        title: 'Interface Practice',
+        title: '[JAVA] Interface Practice',
         topic: 'Java',
         description: 'Implement Comparable, Printable interfaces',
         completed: false,
@@ -416,7 +351,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-java-3',
         timeRange: '11:00–13:00',
-        title: 'Polymorphism Deep Dive',
+        title: '[JAVA] Polymorphism Deep Dive',
         topic: 'Java',
         description: 'Upcasting, instanceof, reference type vs object type',
         completed: false,
@@ -428,7 +363,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-linalg-1',
         timeRange: '14:00–15:00',
-        title: 'Determinant Theory',
+        title: '[LIN ALG] Determinant Theory',
         topic: 'Linear Algebra',
         description: '2×2: det = ad - bc. 3×3: cofactor expansion',
         completed: false,
@@ -447,7 +382,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-linalg-2',
         timeRange: '15:00–17:30',
-        title: 'Determinant Speed Drills',
+        title: '[LIN ALG] Determinant Speed Drills',
         topic: 'Linear Algebra',
         description: '20 problems: 2×2. 40 problems: 3×3',
         completed: false,
@@ -459,30 +394,25 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '2.1',
-            description: '2×2 and 3×3 expansions (speed drills)',
-            numbers: [1, 3, 5, 7, 9, 11, 13, 15],
+            description: 'Determinants',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21],
           },
           {
             section: '2.2',
-            description: 'Row-reduction style',
+            description: 'Determinants',
             numbers: [1, 3, 5, 7, 9, 11],
           },
           {
-            section: '2.1',
-            description: 'Larger cofactor expansions (4×4)',
-            numbers: [17, 19, 21],
-          },
-          {
             section: '2.3',
-            description: 'Properties, quick conceptual checks',
-            numbers: [1, 3, 5, 7, 9],
+            description: 'Determinants',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15],
           },
         ],
       },
       {
         id: 'day3-linalg-3',
         timeRange: '17:30–19:00',
-        title: 'Inverses',
+        title: '[LIN ALG] Inverses',
         topic: 'Linear Algebra',
         description: '2×2 inverse formula, 3×3 via row reduction',
         completed: false,
@@ -493,35 +423,20 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '1.4',
-            description: 'Compute inverses',
+            description: 'Inverses',
             numbers: [1, 3, 5, 7, 11, 13, 15, 17],
           },
           {
             section: '1.5',
-            description: 'Inverse via row reduction',
+            description: 'Inverses',
             numbers: [1, 3, 5, 7, 9],
-          },
-          {
-            section: '1.6',
-            description: 'Is A invertible? (use determinant/non-zero pivots)',
-            numbers: [1, 3, 5, 7],
-          },
-          {
-            section: '2.3',
-            description: 'Determinant–invertible link',
-            numbers: [11, 13, 15],
-          },
-          {
-            section: '5.1',
-            description: 'Eigenvalues → invertible',
-            numbers: [9, 11],
           },
         ],
       },
       {
         id: 'day3-java-4',
         timeRange: '13:00–14:00',
-        title: 'Access Modifiers',
+        title: '[JAVA] Access Modifiers',
         topic: 'Java',
         description: 'private, default, protected, public',
         completed: false,
@@ -533,7 +448,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-java-5',
         timeRange: '19:00–20:00',
-        title: 'Edge Cases',
+        title: '[JAVA] Edge Cases',
         topic: 'Java',
         description: 'Compile vs runtime errors',
         completed: false,
@@ -544,7 +459,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-java-6',
         timeRange: '20:00–21:00',
-        title: 'Overriding Rules & Method Overloading',
+        title: '[JAVA] Overriding Rules & Method Overloading',
         topic: 'Java',
         description: 'Valid vs invalid overriding scenarios, overloading vs overriding distinction',
         completed: false,
@@ -556,7 +471,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-linalg-4',
         timeRange: '19:00–20:00',
-        title: 'Eigenvalue Theory',
+        title: '[LIN ALG] Eigenvalue Theory',
         topic: 'Linear Algebra',
         description: 'Solve det(A − λI) = 0 for eigenvalues',
         completed: false,
@@ -574,7 +489,7 @@ export const studyDays: Day[] = [
       {
         id: 'day3-linalg-5',
         timeRange: '20:00–22:00',
-        title: 'Eigenvalue Marathon',
+        title: '[LIN ALG] Eigenvalue Marathon',
         topic: 'Linear Algebra',
         description: '30 problems: 2×2. 20 problems: 3×3',
         completed: false,
@@ -585,33 +500,13 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '5.1',
-            description: '2×2 and simple 3×3 (mix)',
-            numbers: [1, 3, 5, 7, 9, 11, 13],
+            description: 'Eigenvalues and eigenvectors',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 17, 19, 21, 23, 25],
           },
           {
             section: '5.2',
-            description: 'Additional 2×2\'s (ignore diagonalization part, just compute eigenvalues/eigenvectors)',
-            numbers: [1, 3, 5, 7],
-          },
-          {
-            section: '5.1',
-            description: '3×3 problems',
-            numbers: [17, 19, 21, 23, 25],
-          },
-          {
-            section: '5.2',
-            description: '3×3 problems',
-            numbers: [9, 11, 13, 15, 17, 19],
-          },
-          {
-            section: '5.1',
-            description: 'Concept check (for flashcards, not drills)',
-            numbers: ['T/F a', 'T/F c', 'T/F e'],
-          },
-          {
-            section: '5.2',
-            description: 'Concept check (for flashcards, not drills)',
-            numbers: ['T/F a', 'T/F d', 'T/F f'],
+            description: 'Eigenvalues and eigenvectors',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
           },
         ],
       },
@@ -624,7 +519,7 @@ export const studyDays: Day[] = [
       {
         id: 'day4-java-1',
         timeRange: '8:00–11:00',
-        title: 'Full Java Mock Exam',
+        title: '[JAVA] Full Java Mock Exam',
         topic: 'Java',
         description: 'Take the ES1036 mock exam (44 questions) under exam conditions',
         completed: false,
@@ -635,7 +530,7 @@ export const studyDays: Day[] = [
       {
         id: 'day4-java-2',
         timeRange: '11:00–13:00',
-        title: 'Grade & Analyze',
+        title: '[JAVA] Grade & Analyze',
         topic: 'Java',
         description: 'Mark the exam, compute score, generate weakness list',
         completed: false,
@@ -648,7 +543,7 @@ export const studyDays: Day[] = [
       {
         id: 'day4-linalg-1',
         timeRange: '14:00–15:00',
-        title: 'Dot Products & Orthogonality',
+        title: '[LIN ALG] Dot Products & Orthogonality',
         topic: 'Linear Algebra',
         description: 'u·v = u₁v₁ + ..., u·v = |u||v|cosθ',
         completed: false,
@@ -666,7 +561,7 @@ export const studyDays: Day[] = [
       {
         id: 'day4-linalg-2',
         timeRange: '15:00–16:30',
-        title: 'Practice',
+        title: '[LIN ALG] Practice',
         topic: 'Linear Algebra',
         description: 'Dot products, orthogonality, projections',
         completed: false,
@@ -678,30 +573,20 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: '3.2',
-            description: 'Compute dot products (20 problems)',
-            numbers: [1, 3, 5, 7, 9, 11, 15, 19],
-          },
-          {
-            section: '3.2',
-            description: 'Check orthogonality / angles',
-            numbers: [21, 23, 27],
+            description: 'Dot products and orthogonality',
+            numbers: [1, 3, 5, 7, 9, 11, 15, 19, 21, 23, 27],
           },
           {
             section: '3.3',
-            description: 'Check orthogonality',
-            numbers: [1, 3, 7, 9, 11, 13, 15],
-          },
-          {
-            section: '3.3',
-            description: 'Projections (10 problems)',
-            numbers: [17, 19, 21, 23],
+            description: 'Dot products and orthogonality',
+            numbers: [1, 3, 7, 9, 11, 13, 15, 17, 19, 21, 23],
           },
         ],
       },
       {
         id: 'day4-linalg-3',
         timeRange: '16:30–19:00',
-        title: 'Comprehensive Lin Alg Review',
+        title: '[LIN ALG] Comprehensive Lin Alg Review',
         topic: 'Linear Algebra',
         description: 'One of each major type',
         completed: false,
@@ -723,7 +608,7 @@ export const studyDays: Day[] = [
       {
         id: 'day5-java-1',
         timeRange: '8:00–11:00',
-        title: 'Code Writing Marathon',
+        title: '[JAVA] Code Writing Marathon',
         topic: 'Java',
         description: '6 programs',
         completed: false,
@@ -739,7 +624,7 @@ export const studyDays: Day[] = [
       {
         id: 'day5-java-2',
         timeRange: '11:00–13:00',
-        title: 'Speed Drills',
+        title: '[JAVA] Speed Drills',
         topic: 'Java',
         description: '20 MC-style questions, 3 code-tracing, 2 code-writing',
         completed: false,
@@ -752,7 +637,7 @@ export const studyDays: Day[] = [
       {
         id: 'day5-linalg-1',
         timeRange: '14:00–17:00',
-        title: 'Mixed Problem Marathon',
+        title: '[LIN ALG] Mixed Problem Marathon',
         topic: 'Linear Algebra',
         description: '60 mixed problems',
         completed: false,
@@ -767,32 +652,32 @@ export const studyDays: Day[] = [
         textbookProblems: [
           {
             section: 'Mixed Review',
-            description: 'Row reduction / rank / nullspace: pick unsolved questions from 1.2, 1.5, 4.8, 4.9 sets',
+            description: 'Redo only the questions you marked wrong/slow from: 1.2, 1.5, 4.8, 4.9 (row reduction, rank, nullspace)',
             numbers: [],
           },
           {
             section: 'Mixed Review',
-            description: 'Independence / span: unsolved from 4.3–4.4 sets',
+            description: 'Redo only the questions you marked wrong/slow from: 4.3–4.4 (independence, span)',
             numbers: [],
           },
           {
             section: 'Mixed Review',
-            description: 'Determinants: unsolved from 2.1–2.3 sets',
+            description: 'Redo only the questions you marked wrong/slow from: 2.1–2.3 (determinants)',
             numbers: [],
           },
           {
             section: 'Mixed Review',
-            description: 'Inverses: unsolved from 1.4–1.5 sets',
+            description: 'Redo only the questions you marked wrong/slow from: 1.4–1.5 (inverses)',
             numbers: [],
           },
           {
             section: 'Mixed Review',
-            description: 'Eigenvalues: unsolved from 5.1–5.2 sets',
+            description: 'Redo only the questions you marked wrong/slow from: 5.1–5.2 (eigenvalues)',
             numbers: [],
           },
           {
             section: 'Mixed Review',
-            description: 'Dot product / orthogonality: unsolved from 3.2–3.3 sets',
+            description: 'Redo only the questions you marked wrong/slow from: 3.2–3.3 (dot product, orthogonality)',
             numbers: [],
           },
         ],
@@ -800,7 +685,7 @@ export const studyDays: Day[] = [
       {
         id: 'day5-linalg-2',
         timeRange: '17:00–19:00',
-        title: 'Final Review',
+        title: '[LIN ALG] Final Review',
         topic: 'Linear Algebra',
         description: 'Review all flashcards, construct formula sheet',
         completed: false,
