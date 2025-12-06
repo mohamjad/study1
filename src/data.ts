@@ -565,5 +565,33 @@ export const resources: Resource[] = [
     link: 'https://www.symbolab.com/',
     subject: 'Linear Algebra',
   },
+  {
+    id: 'r9',
+    title: '3Blue1Brown - Dot Products & Duality',
+    purpose: 'Visual explanation of dot products, orthogonality, and projections (Part 2)',
+    link: 'https://www.3blue1brown.com/topics/linear-algebra',
+    subject: 'Linear Algebra',
+  },
+  {
+    id: 'r10',
+    title: 'Java Practice Problems - GeeksforGeeks',
+    purpose: 'Additional Java practice problems for exam prep',
+    link: 'https://www.geeksforgeeks.org/java-programming-examples/',
+    subject: 'Java',
+  },
+  {
+    id: 'r11',
+    title: 'Linear Algebra Practice Problems - Paul\'s Online Notes',
+    purpose: 'Comprehensive practice problems for linear algebra review',
+    link: 'https://tutorial.math.lamar.edu/classes/calcii/calcii.aspx',
+    subject: 'Linear Algebra',
+  },
+  {
+    id: 'r12',
+    title: 'Java Exam Prep - Oracle Java Tutorials',
+    purpose: 'Official Java documentation and tutorials for exam review',
+    link: 'https://docs.oracle.com/javase/tutorial/',
+    subject: 'Java',
+  },
 ];
 
