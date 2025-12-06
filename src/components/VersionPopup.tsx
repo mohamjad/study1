@@ -22,7 +22,7 @@ export default function VersionPopup({ onClose }: VersionPopupProps) {
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
             <p className="text-sm text-blue-800">
-              <strong>💡 Best Experience:</strong> This app works best on iPad or laptop for optimal viewing and interaction.
+              <strong>Best Experience:</strong> This app works best on iPad or laptop for optimal viewing and interaction.
             </p>
           </div>
           <div className="pt-4 border-t">

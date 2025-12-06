@@ -139,18 +139,18 @@ function App() {
           </p>
           <div className="bg-green-50 border-l-4 border-green-600 p-3 rounded-r-lg mb-3">
             <p className="text-sm text-green-800 font-medium">
-              ✓ 1:1 mapping to ES1036 (Java) and NM1411 (Linear Algebra) UWO course content
+              1:1 mapping to ES1036 (Java) and NM1411 (Linear Algebra) UWO course content
             </p>
           </div>
           <p className="text-sm text-gray-500 italic mb-4">
             by Mohammed Amjad
           </p>
           <p className="text-xs text-gray-400 text-center mb-2">
-            💡 Best viewed on iPad or laptop for optimal experience
+            Best viewed on iPad or laptop for optimal experience
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg mb-4">
             <div className="flex items-center gap-3">
-              <span className="text-blue-600 font-semibold">📚 Textbook:</span>
+              <span className="text-blue-600 font-semibold">Textbook:</span>
               <a 
                 href="https://www.studyhalo.com/media/resources/resources/MAT1503/Textbook/MAT1503_-_Prescribed_book.pdf"
                 target="_blank"
