@@ -28,7 +28,7 @@ function App() {
                   completed: savedBlock.completed,
                   tasks: freshBlock.tasks.map(freshTask => {
                     const savedTask = savedBlock.tasks.find(t => t.id === freshTask.id);
-                    return savedTask ? { ...freshTask, description: freshTask.description } : freshTask;
+                    return savedTask ? { ...freshTask, completed: savedTask.completed } : freshTask;
                   }),
                   flashcards: freshBlock.flashcards?.map(freshCard => {
                     const savedCard = savedBlock.flashcards?.find(c => c.id === freshCard.id);
@@ -58,7 +58,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    saveDays(days);
+    // Only save if days have been initialized (not on first render with default data)
+    if (days.length > 0) {
+      saveDays(days);
+    }
   }, [days]);
 
   const handleToggleTask = (dayNumber: number, taskId: string) => {
