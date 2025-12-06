@@ -64,6 +64,27 @@ export default function TimeBlock({
             />
           </div>
 
+          {block.textbookProblems && block.textbookProblems.length > 0 && (
+            <div className="mb-4">
+              <h4 className="font-semibold mb-2 text-gray-700">Textbook Problems (Anton & Kaul, Elementary Linear Algebra 12e)</h4>
+              <div className="space-y-3">
+                {block.textbookProblems.map((problemSet, idx) => (
+                  <div key={idx} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+                    {problemSet.description && (
+                      <p className="text-sm font-medium text-gray-700 mb-1">{problemSet.description}</p>
+                    )}
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-sm font-semibold text-blue-600">Section {problemSet.section}:</span>
+                      <span className="text-sm text-gray-600">
+                        Problems {problemSet.numbers.length > 0 ? problemSet.numbers.join(', ') : 'See description above'}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {block.flashcards && block.flashcards.length > 0 && (
             <div>
               <h4 className="font-semibold mb-2 text-gray-700">Flashcards</h4>

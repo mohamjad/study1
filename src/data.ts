@@ -123,6 +123,23 @@ export const studyDays: Day[] = [
           { id: 'day1-linalg-1-task-3', description: 'Practice transpose: 10 problems (including rectangular matrices)', completed: false },
           { id: 'day1-linalg-1-task-4', description: 'Use Khan Academy for exercises; verify selected answers with Symbolab', completed: false },
         ],
+        textbookProblems: [
+          {
+            section: '1.3',
+            description: 'Addition / scalar mult (10 problems)',
+            numbers: [1, 3, 5, 7, 13, 15, 'T/F a', 'T/F c'],
+          },
+          {
+            section: '1.3',
+            description: 'Matrix multiplication (10 problems)',
+            numbers: [11, 17, 19, 21, 23, 25],
+          },
+          {
+            section: '1.3',
+            description: 'Transpose + properties (5–10 problems)',
+            numbers: [27, 29, 31, 33, 'T/F e', 'T/F k'],
+          },
+        ],
       },
       {
         id: 'day1-linalg-2',
@@ -135,6 +152,23 @@ export const studyDays: Day[] = [
           { id: 'day1-linalg-2-task-1', description: 'Watch short Khan Academy RREF video (~15 min at 2x)', completed: false },
           { id: 'day1-linalg-2-task-2', description: 'Row reduce 20 matrices: Start: 3×3 systems. Then: 4×4 and 3×5 matrices. Goal: handle a 4×4 RREF problem in under 5 minutes with correct pivots.', completed: false },
         ],
+        textbookProblems: [
+          {
+            section: '1.2',
+            description: 'Warm-up (3×3)',
+            numbers: [1, 3, 5, 7, 9, 11, 13],
+          },
+          {
+            section: '1.2',
+            description: 'Harder / "almost singular" and 4×4 style',
+            numbers: [15, 17, 19],
+          },
+          {
+            section: '1.5',
+            description: 'Row-operations for inverse, but still just RREF practice',
+            numbers: [1, 5, 9, 13, 17, 21, 25],
+          },
+        ],
       },
       {
         id: 'day1-linalg-3',
@@ -146,6 +180,28 @@ export const studyDays: Day[] = [
         tasks: [
           { id: 'day1-linalg-3-task-1', description: '15 problems: Solve Ax = b and express solution sets with parameters (free variables)', completed: false },
           { id: 'day1-linalg-3-task-2', description: '10 problems: Given RREF, identify: Pivot columns, Free columns, Describe solution forms', completed: false },
+        ],
+        textbookProblems: [
+          {
+            section: '1.2',
+            description: 'Systems with free variables',
+            numbers: [21, 23, 25, 27],
+          },
+          {
+            section: '1.6',
+            description: 'Solve Ax=b with parameters',
+            numbers: [1, 3, 5, 7, 13, 15, 17],
+          },
+          {
+            section: '4.8',
+            description: 'Identify leading/free from RREF',
+            numbers: [1, 3, 5, 7],
+          },
+          {
+            section: '4.9',
+            description: 'Identify leading/free from RREF',
+            numbers: [1, 2, 5, 6, 9, 13],
+          },
         ],
       },
       {
@@ -234,6 +290,38 @@ export const studyDays: Day[] = [
           { id: 'day2-linalg-2-task-1', description: '25 problems: Are vectors linearly independent? Put vectors as columns, row reduce, check pivot in each column', completed: false },
           { id: 'day2-linalg-2-task-2', description: '15 problems: Is vector b in span {v₁, v₂, v₃}? Set up augmented matrix [v₁ v₂ v₃ | b], row reduce; consistency ↔ b in span', completed: false },
         ],
+        textbookProblems: [
+          {
+            section: '4.4',
+            description: 'Are these vectors linearly independent? (25 problems)',
+            numbers: [1, 3, 5, 7, 11, 13, 15, 17, 19, 25, 27, 29],
+          },
+          {
+            section: '4.3',
+            description: 'Additional span/LI style problems',
+            numbers: [11, 13, 15, 17],
+          },
+          {
+            section: '4.3',
+            description: 'Is (b) in span({v₁, v₂, v₃})? (15 problems)',
+            numbers: [1, 3, 5, 7, 9, 19],
+          },
+          {
+            section: '4.4',
+            description: 'Span checks via systems',
+            numbers: [23, 31, 33],
+          },
+          {
+            section: '4.3',
+            description: 'Concept check (flashcard alignment)',
+            numbers: ['T/F a', 'T/F c', 'T/F f'],
+          },
+          {
+            section: '4.4',
+            description: 'Concept check (flashcard alignment)',
+            numbers: ['T/F a', 'T/F d', 'T/F g'],
+          },
+        ],
       },
       {
         id: 'day2-linalg-3',
@@ -247,6 +335,38 @@ export const studyDays: Day[] = [
           { id: 'day2-linalg-3-task-2', description: '20 problems: Find rank and nullity', completed: false },
           { id: 'day2-linalg-3-task-3', description: '15 problems: Find basis for column space', completed: false },
           { id: 'day2-linalg-3-task-4', description: '15 problems: Find basis for null space', completed: false },
+        ],
+        textbookProblems: [
+          {
+            section: '4.9',
+            description: 'Find rank and nullity (20 problems)',
+            numbers: [1, 2, 5, 6, 9, 13, 17, 21, 23],
+          },
+          {
+            section: '4.8',
+            description: 'Find rank and nullity (additional)',
+            numbers: [11, 13, 15, 17, 19, 25],
+          },
+          {
+            section: '4.8',
+            description: 'Basis for column space (pivot columns → basis)',
+            numbers: [1, 3, 5, 7, 9],
+          },
+          {
+            section: '4.5',
+            description: 'Basis-type questions',
+            numbers: [1, 3, 5, 7, 9],
+          },
+          {
+            section: '4.8',
+            description: 'Basis for null space (explicitly)',
+            numbers: [21, 23, 27],
+          },
+          {
+            section: '4.9',
+            description: 'Solve Ax=0 and write basis',
+            numbers: [5, 6, 9, 13, 17, 21, 23],
+          },
         ],
       },
     ],
@@ -314,6 +434,28 @@ export const studyDays: Day[] = [
           { id: 'day3-linalg-2-task-2', description: '40 problems: 3×3 determinants (goal: <3 min each)', completed: false },
           { id: 'day3-linalg-2-task-3', description: '10 problems: 4×4 determinants via cofactor expansion', completed: false },
         ],
+        textbookProblems: [
+          {
+            section: '2.1',
+            description: '2×2 and 3×3 expansions (speed drills)',
+            numbers: [1, 3, 5, 7, 9, 11, 13, 15],
+          },
+          {
+            section: '2.2',
+            description: 'Row-reduction style',
+            numbers: [1, 3, 5, 7, 9, 11],
+          },
+          {
+            section: '2.1',
+            description: 'Larger cofactor expansions (4×4)',
+            numbers: [17, 19, 21],
+          },
+          {
+            section: '2.3',
+            description: 'Properties, quick conceptual checks',
+            numbers: [1, 3, 5, 7, 9],
+          },
+        ],
       },
       {
         id: 'day3-linalg-3',
@@ -325,6 +467,33 @@ export const studyDays: Day[] = [
         tasks: [
           { id: 'day3-linalg-3-task-1', description: '15 problems: compute inverses', completed: false },
           { id: 'day3-linalg-3-task-2', description: '10 problems: determine if matrices are singular (non-invertible)', completed: false },
+        ],
+        textbookProblems: [
+          {
+            section: '1.4',
+            description: 'Compute inverses',
+            numbers: [1, 3, 5, 7, 11, 13, 15, 17],
+          },
+          {
+            section: '1.5',
+            description: 'Inverse via row reduction',
+            numbers: [1, 3, 5, 7, 9],
+          },
+          {
+            section: '1.6',
+            description: 'Is A invertible? (use determinant/non-zero pivots)',
+            numbers: [1, 3, 5, 7],
+          },
+          {
+            section: '2.3',
+            description: 'Determinant–invertible link',
+            numbers: [11, 13, 15],
+          },
+          {
+            section: '5.1',
+            description: 'Eigenvalues → invertible',
+            numbers: [9, 11],
+          },
         ],
       },
       {
@@ -384,6 +553,38 @@ export const studyDays: Day[] = [
           { id: 'day3-linalg-5-task-1', description: '30 problems: 2×2 eigenvalues and eigenvectors (≤ 4 min each)', completed: false },
           { id: 'day3-linalg-5-task-2', description: '20 problems: 3×3 eigenvalues and eigenvectors (≤ 8 min each)', completed: false },
         ],
+        textbookProblems: [
+          {
+            section: '5.1',
+            description: '2×2 and simple 3×3 (mix) - redo with timer until 2×2\'s are all <4 min each',
+            numbers: [1, 3, 5, 7, 9, 11, 13],
+          },
+          {
+            section: '5.2',
+            description: 'Additional 2×2\'s (ignore diagonalization part, just compute eigenvalues/eigenvectors)',
+            numbers: [1, 3, 5, 7],
+          },
+          {
+            section: '5.1',
+            description: '3×3 problems',
+            numbers: [17, 19, 21, 23, 25],
+          },
+          {
+            section: '5.2',
+            description: '3×3 problems',
+            numbers: [9, 11, 13, 15, 17, 19],
+          },
+          {
+            section: '5.1',
+            description: 'Concept check (for flashcards, not drills)',
+            numbers: ['T/F a', 'T/F c', 'T/F e'],
+          },
+          {
+            section: '5.2',
+            description: 'Concept check (for flashcards, not drills)',
+            numbers: ['T/F a', 'T/F d', 'T/F f'],
+          },
+        ],
       },
     ],
   },
@@ -437,6 +638,28 @@ export const studyDays: Day[] = [
           { id: 'day4-linalg-2-task-1', description: '20 problems: compute dot products in R², R³, Rⁿ', completed: false },
           { id: 'day4-linalg-2-task-2', description: '15 problems: check orthogonality', completed: false },
           { id: 'day4-linalg-2-task-3', description: '10 problems: compute projections onto another vector', completed: false },
+        ],
+        textbookProblems: [
+          {
+            section: '3.2',
+            description: 'Compute dot products (20 problems)',
+            numbers: [1, 3, 5, 7, 9, 11, 15, 19],
+          },
+          {
+            section: '3.2',
+            description: 'Check orthogonality / angles',
+            numbers: [21, 23, 27],
+          },
+          {
+            section: '3.3',
+            description: 'Check orthogonality',
+            numbers: [1, 3, 7, 9, 11, 13, 15],
+          },
+          {
+            section: '3.3',
+            description: 'Projections (10 problems)',
+            numbers: [17, 19, 21, 23],
+          },
         ],
       },
       {
@@ -504,6 +727,38 @@ export const studyDays: Day[] = [
           { id: 'day5-linalg-1-task-4', description: '10 determinants (3×3)', completed: false },
           { id: 'day5-linalg-1-task-5', description: '10 eigenvalues (2×2)', completed: false },
           { id: 'day5-linalg-1-task-6', description: '10 dot product / orthogonality / projection', completed: false },
+        ],
+        textbookProblems: [
+          {
+            section: 'Mixed Review',
+            description: 'Row reduction / rank / nullspace: pick unsolved questions from 1.2, 1.5, 4.8, 4.9 sets',
+            numbers: [],
+          },
+          {
+            section: 'Mixed Review',
+            description: 'Independence / span: unsolved from 4.3–4.4 sets',
+            numbers: [],
+          },
+          {
+            section: 'Mixed Review',
+            description: 'Determinants: unsolved from 2.1–2.3 sets',
+            numbers: [],
+          },
+          {
+            section: 'Mixed Review',
+            description: 'Inverses: unsolved from 1.4–1.5 sets',
+            numbers: [],
+          },
+          {
+            section: 'Mixed Review',
+            description: 'Eigenvalues: unsolved from 5.1–5.2 sets',
+            numbers: [],
+          },
+          {
+            section: 'Mixed Review',
+            description: 'Dot product / orthogonality: unsolved from 3.2–3.3 sets',
+            numbers: [],
+          },
         ],
       },
       {
@@ -592,6 +847,13 @@ export const resources: Resource[] = [
     purpose: 'Official Java documentation and tutorials for exam review',
     link: 'https://docs.oracle.com/javase/tutorial/',
     subject: 'Java',
+  },
+  {
+    id: 'r13',
+    title: 'Anton & Kaul, Elementary Linear Algebra 12e',
+    purpose: 'Primary textbook for all linear algebra practice problems',
+    link: '',
+    subject: 'Linear Algebra',
   },
 ];
 

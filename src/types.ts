@@ -14,6 +14,12 @@ export interface Flashcard {
   known: boolean;
 }
 
+export interface TextbookProblemSet {
+  section: string;
+  numbers: (number | string)[];
+  description?: string;
+}
+
 export interface TimeBlock {
   id: string;
   timeRange: string;
@@ -23,6 +29,7 @@ export interface TimeBlock {
   tasks: Task[];
   flashcards?: Flashcard[];
   completed: boolean;
+  textbookProblems?: TextbookProblemSet[];
 }
 
 export interface Day {
