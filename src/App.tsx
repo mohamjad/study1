@@ -10,7 +10,14 @@ import ExamDayStrategy from './components/ExamDayStrategy';
 function App() {
   const [days, setDays] = useState<Day[]>(() => {
     const saved = loadDays();
-    return saved || studyDays;
+    if (saved) {
+      // Merge dates from fresh studyDays while preserving user progress
+      return saved.map((savedDay: Day) => {
+        const freshDay = studyDays.find(d => d.dayNumber === savedDay.dayNumber);
+        return freshDay ? { ...savedDay, date: freshDay.date } : savedDay;
+      });
+    }
+    return studyDays;
   });
   const [activeDay, setActiveDay] = useState(1);
 
