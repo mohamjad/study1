@@ -16,7 +16,7 @@ export const studyDays: Day[] = [
         tasks: [
           {
             id: 'day1-java-1-task-1',
-            description: 'Watch Bro Code Java Full Course, jump to OOP section (~4:00:00 mark) at 1.75x',
+            description: 'Watch Bro Code Java Full Course, jump to OOP section',
             completed: false,
           },
           {
@@ -154,8 +154,8 @@ export const studyDays: Day[] = [
         description: 'Master RREF',
         completed: false,
         tasks: [
-          { id: 'day1-linalg-2-task-1', description: 'Watch short Khan Academy RREF video (~15 min at 2x)', completed: false },
-          { id: 'day1-linalg-2-task-2', description: 'Row reduce 20 matrices: Start: 3×3 systems. Then: 4×4 and 3×5 matrices. Goal: handle a 4×4 RREF problem in under 5 minutes with correct pivots.', completed: false },
+          { id: 'day1-linalg-2-task-1', description: 'Watch short Khan Academy RREF video', completed: false },
+          { id: 'day1-linalg-2-task-2', description: 'Row reduce 20 matrices: Start: 3×3 systems. Then: 4×4 and 3×5 matrices. Goal: handle a 4×4 RREF problem with correct pivots.', completed: false },
         ],
         textbookProblems: [
           {
@@ -218,7 +218,7 @@ export const studyDays: Day[] = [
         completed: false,
         tasks: [
           { id: 'day1-evening-task-1', description: 'Review all Java flashcards (3 passes)', completed: false },
-          { id: 'day1-evening-task-2', description: 'Re-implement Circle class from memory in under 10 minutes', completed: false },
+          { id: 'day1-evening-task-2', description: 'Re-implement Circle class from memory', completed: false },
           { id: 'day1-evening-task-3', description: 'Re-do any arrays or jagged array questions that weren\'t automatic', completed: false },
         ],
       },
@@ -236,7 +236,7 @@ export const studyDays: Day[] = [
         description: 'extends keyword, super() constructor call, method overriding',
         completed: false,
         tasks: [
-          { id: 'day2-java-1-task-1', description: 'Watch a focused Java inheritance tutorial (~30 minutes)', completed: false },
+          { id: 'day2-java-1-task-1', description: 'Watch a focused Java inheritance tutorial', completed: false },
         ],
         flashcards: [
           { id: 'f17', front: 'What does super() do?', back: 'Calls the parent class constructor; must be first line in constructor if used.', known: false },
@@ -271,7 +271,7 @@ export const studyDays: Day[] = [
         description: 'Cannot instantiate, concrete subclasses must implement abstract methods',
         completed: false,
         tasks: [
-          { id: 'day2-java-3-task-1', description: 'Watch a short abstract classes tutorial (~20 min)', completed: false },
+          { id: 'day2-java-3-task-1', description: 'Watch a short abstract classes tutorial', completed: false },
           { id: 'day2-java-3-task-2', description: 'Solve problems analogous to mock Q2, Q14, Q16 about abstract classes', completed: false },
           { id: 'day2-java-3-task-3', description: 'Code 2 small abstract hierarchies (e.g., Shape → Circle/Rectangle, Account → Checking/Savings)', completed: false },
         ],
@@ -284,7 +284,7 @@ export const studyDays: Day[] = [
         description: 'Span = all linear combinations, Linear independence test',
         completed: false,
         tasks: [
-          { id: 'day2-linalg-1-task-1', description: 'Watch 3Blue1Brown Essence of Linear Algebra, Part 3 at 2x', completed: false },
+          { id: 'day2-linalg-1-task-1', description: 'Watch 3Blue1Brown Essence of Linear Algebra, Part 3', completed: false },
         ],
         flashcards: [
           { id: 'linalg1', front: 'What is the span of a set of vectors?', back: 'The span is the set of all possible linear combinations of those vectors. Span{v₁, v₂, ..., vₖ} = {c₁v₁ + c₂v₂ + ... + cₖvₖ | cᵢ ∈ ℝ}.', known: false },
@@ -345,7 +345,7 @@ export const studyDays: Day[] = [
         description: 'rank(A) + nullity(A) = # of columns',
         completed: false,
         tasks: [
-          { id: 'day2-linalg-3-task-1', description: 'Skim MIT 18.06 notes (~15 minutes)', completed: false },
+          { id: 'day2-linalg-3-task-1', description: 'Skim MIT 18.06 notes', completed: false },
           { id: 'day2-linalg-3-task-2', description: '20 problems: Find rank and nullity', completed: false },
           { id: 'day2-linalg-3-task-3', description: '15 problems: Find basis for column space', completed: false },
           { id: 'day2-linalg-3-task-4', description: '15 problems: Find basis for null space', completed: false },
@@ -397,7 +397,7 @@ export const studyDays: Day[] = [
         description: 'Interface methods are public abstract by default',
         completed: false,
         tasks: [
-          { id: 'day3-java-1-task-1', description: 'Watch interface tutorial (~30 min)', completed: false },
+          { id: 'day3-java-1-task-1', description: 'Watch interface tutorial', completed: false },
           { id: 'day3-java-1-task-2', description: 'Solve a recreated Q35-style problem tracing why it fails to compile', completed: false },
         ],
       },
@@ -433,7 +433,7 @@ export const studyDays: Day[] = [
         description: '2×2: det = ad - bc. 3×3: cofactor expansion',
         completed: false,
         tasks: [
-          { id: 'day3-linalg-1-task-1', description: 'Watch Khan Academy "Computing determinants" (~20 min at 2x)', completed: false },
+          { id: 'day3-linalg-1-task-1', description: 'Watch Khan Academy "Computing determinants"', completed: false },
         ],
         flashcards: [
           { id: 'linalg5', front: '2×2 determinant formula', back: 'For A = [[a, b], [c, d]], det(A) = ad - bc', known: false },
@@ -449,11 +449,11 @@ export const studyDays: Day[] = [
         timeRange: '15:00–17:30',
         title: 'Determinant Speed Drills',
         topic: 'Linear Algebra',
-        description: '20 problems: 2×2 (goal: <30s each). 40 problems: 3×3 (goal: <3 min each)',
+        description: '20 problems: 2×2. 40 problems: 3×3',
         completed: false,
         tasks: [
-          { id: 'day3-linalg-2-task-1', description: '20 problems: 2×2 determinants (goal: <30s each)', completed: false },
-          { id: 'day3-linalg-2-task-2', description: '40 problems: 3×3 determinants (goal: <3 min each)', completed: false },
+          { id: 'day3-linalg-2-task-1', description: '20 problems: 2×2 determinants', completed: false },
+          { id: 'day3-linalg-2-task-2', description: '40 problems: 3×3 determinants', completed: false },
           { id: 'day3-linalg-2-task-3', description: '10 problems: 4×4 determinants via cofactor expansion', completed: false },
         ],
         textbookProblems: [
@@ -561,7 +561,7 @@ export const studyDays: Day[] = [
         description: 'Solve det(A − λI) = 0 for eigenvalues',
         completed: false,
         tasks: [
-          { id: 'day3-linalg-4-task-1', description: 'Watch 3Blue1Brown Parts 6–7 (~1.5x speed)', completed: false },
+          { id: 'day3-linalg-4-task-1', description: 'Watch 3Blue1Brown Parts 6–7', completed: false },
         ],
         flashcards: [
           { id: 'linalg11', front: 'What is an eigenvalue?', back: 'A scalar λ such that Av = λv for some nonzero vector v. The vector v is called an eigenvector.', known: false },
@@ -576,16 +576,16 @@ export const studyDays: Day[] = [
         timeRange: '20:00–22:00',
         title: 'Eigenvalue Marathon',
         topic: 'Linear Algebra',
-        description: '30 problems: 2×2 (≤ 4 min each). 20 problems: 3×3 (≤ 8 min each)',
+        description: '30 problems: 2×2. 20 problems: 3×3',
         completed: false,
         tasks: [
-          { id: 'day3-linalg-5-task-1', description: '30 problems: 2×2 eigenvalues and eigenvectors (≤ 4 min each)', completed: false },
-          { id: 'day3-linalg-5-task-2', description: '20 problems: 3×3 eigenvalues and eigenvectors (≤ 8 min each)', completed: false },
+          { id: 'day3-linalg-5-task-1', description: '30 problems: 2×2 eigenvalues and eigenvectors', completed: false },
+          { id: 'day3-linalg-5-task-2', description: '20 problems: 3×3 eigenvalues and eigenvectors', completed: false },
         ],
         textbookProblems: [
           {
             section: '5.1',
-            description: '2×2 and simple 3×3 (mix) - redo with timer until 2×2\'s are all <4 min each',
+            description: '2×2 and simple 3×3 (mix)',
             numbers: [1, 3, 5, 7, 9, 11, 13],
           },
           {
@@ -626,10 +626,10 @@ export const studyDays: Day[] = [
         timeRange: '8:00–11:00',
         title: 'Full Java Mock Exam',
         topic: 'Java',
-        description: 'Take the ES1036 mock exam (44 questions, 3 hours) under exam conditions',
+        description: 'Take the ES1036 mock exam (44 questions) under exam conditions',
         completed: false,
         tasks: [
-          { id: 'day4-java-1-task-1', description: 'Take the ES1036 mock exam (44 questions, 3 hours) under exam conditions: Timed 3 hours, No notes, no help, no IDE', completed: false },
+          { id: 'day4-java-1-task-1', description: 'Take the ES1036 mock exam (44 questions) under exam conditions: No notes, no help, no IDE', completed: false },
         ],
       },
       {
@@ -725,7 +725,7 @@ export const studyDays: Day[] = [
         timeRange: '8:00–11:00',
         title: 'Code Writing Marathon',
         topic: 'Java',
-        description: '6 programs, 30 min each',
+        description: '6 programs',
         completed: false,
         tasks: [
           { id: 'day5-java-1-task-1', description: 'Matrix manipulation method like mock Q42: result = a/x + b*y for 2D double arrays', completed: false },
@@ -744,9 +744,9 @@ export const studyDays: Day[] = [
         description: '20 MC-style questions, 3 code-tracing, 2 code-writing',
         completed: false,
         tasks: [
-          { id: 'day5-java-2-task-1', description: '20 MC-style questions (~3 min each)', completed: false },
-          { id: 'day5-java-2-task-2', description: '3 code-tracing problems (~10 min each)', completed: false },
-          { id: 'day5-java-2-task-3', description: '2 code-writing questions (~20 min each)', completed: false },
+          { id: 'day5-java-2-task-1', description: '20 MC-style questions', completed: false },
+          { id: 'day5-java-2-task-2', description: '3 code-tracing problems', completed: false },
+          { id: 'day5-java-2-task-3', description: '2 code-writing questions', completed: false },
         ],
       },
       {
@@ -754,7 +754,7 @@ export const studyDays: Day[] = [
         timeRange: '14:00–17:00',
         title: 'Mixed Problem Marathon',
         topic: 'Linear Algebra',
-        description: '60 mixed problems (~3 min each)',
+        description: '60 mixed problems',
         completed: false,
         tasks: [
           { id: 'day5-linalg-1-task-1', description: '10 row-reduction → RREF', completed: false },
@@ -817,7 +817,7 @@ export const resources: Resource[] = [
   {
     id: 'r1',
     title: 'Bro Code: Full Java Course',
-    purpose: 'YouTube Java course - jump to OOP section (~4:00:00 mark)',
+    purpose: 'YouTube Java course - jump to OOP section',
     link: 'https://www.youtube.com/results?search_query=Bro+Code+Full+Java+Course',
     subject: 'Java',
   },
