@@ -2,7 +2,7 @@ export default function ExamDayStrategy() {
   return (
     <div className="space-y-6 mb-6">
       <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4 text-blue-800">Java Exam Day (Dec 11)</h2>
+        <h2 className="text-2xl font-bold mb-4 text-blue-800">ES1036 - Java Exam Day (Dec 11)</h2>
         
         <div className="mb-4">
           <h3 className="text-lg font-semibold mb-2">07:00–08:00 Pre-Exam Mini-Routine</h3>
@@ -32,7 +32,7 @@ export default function ExamDayStrategy() {
       </div>
 
       <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4 text-green-800">Linear Algebra Exam Day (Dec 12)</h2>
+        <h2 className="text-2xl font-bold mb-4 text-green-800">NM1411 - Linear Algebra Exam Day (Dec 12)</h2>
         
         <div className="mb-4">
           <h3 className="text-lg font-semibold mb-2">07:00–08:00 Pre-Exam Mini-Routine</h3>

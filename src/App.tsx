@@ -85,7 +85,7 @@ function App() {
             Study Planner - Java & Linear Algebra
           </h1>
           <p className="text-gray-600 mb-1">
-            Comprehensive 6-day study plan for ES1036 exams
+            Comprehensive 6-day study plan for ES1036 (Java) & NM1411 (Linear Algebra) exams
           </p>
           <p className="text-sm text-gray-500 italic">
             by Mohammed Amjad
