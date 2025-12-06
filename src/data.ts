@@ -528,20 +528,6 @@ export const resources: Resource[] = [
     subject: 'Java',
   },
   {
-    id: 'r3',
-    title: 'ES1036 official mock exam',
-    purpose: '44 questions, 3 hours, parts I–III',
-    link: '#',
-    subject: 'Java',
-  },
-  {
-    id: 'r4',
-    title: 'ES1036 Final Practice Exam',
-    purpose: 'Final practice exam for Java',
-    link: '#',
-    subject: 'Java',
-  },
-  {
     id: 'r5',
     title: '3Blue1Brown – Essence of Linear Algebra',
     purpose: 'Visual explanations of linear algebra concepts',
