@@ -37,6 +37,7 @@ export const studyDays: Day[] = [
           { id: 'f10', front: 'Can constructors be static?', back: 'No, constructors are not static; they\'re invoked on object creation.', known: false },
           { id: 'f11', front: 'Can constructors return values?', back: 'No explicit return type; implicitly return the constructed object.', known: false },
           { id: 'f12', front: 'Overloading vs overriding (summary card)', back: 'Overloading = same name, different parameter list within same class; overriding = same signature in subclass, compatible return type, not more restrictive access.', known: false },
+          { id: 'f12a', front: 'UML / Association', back: 'Association = classes using other classes as fields / collaborating (e.g., Textbook has an Author field).', known: false },
           { id: 'f13', front: 'Array basics', back: 'Arrays are objects; length field; indexing from 0; passed by reference.', known: false },
           { id: 'f14', front: '2D array basics', back: 'Arrays of arrays; jagged; m.length = number of rows; m[i].length = length of row i.', known: false },
           { id: 'f15', front: 'Default values for fields vs locals', back: 'Fields get defaults (0, 0.0, null, false); local variables do not, must be explicitly initialized before use.', known: false },
@@ -66,6 +67,11 @@ export const studyDays: Day[] = [
             description: 'Rectangle class: Private fields: double width, double height. Constructor, getArea(), getPerimeter(). toString() describing width, height, area, perimeter.',
             completed: false,
           },
+          {
+            id: 'day1-java-2-task-4',
+            description: 'Method overloading: Write 3 overloaded methods (print, abs, etc.) just like PreLab5. Practice 10 overloading vs overriding ID questions.',
+            completed: false,
+          },
         ],
       },
       {
@@ -73,7 +79,7 @@ export const studyDays: Day[] = [
         timeRange: '11:30–13:00',
         title: 'Arrays & References',
         topic: 'Java',
-        description: 'Key concepts: Jagged arrays, Arrays are objects passed by reference',
+        description: 'Key concepts: Jagged arrays, Arrays are objects passed by reference, Arrays utility methods, Scanner',
         completed: false,
         tasks: [
           {
@@ -89,6 +95,16 @@ export const studyDays: Day[] = [
           {
             id: 'day1-java-3-task-3',
             description: 'Recreate and solve questions analogous to mock exam Q19 and Q30 (arrays passed by reference, reference reassignment).',
+            completed: false,
+          },
+          {
+            id: 'day1-java-3-task-4',
+            description: 'Arrays utility methods practice: 5-10 quick snippets covering Arrays.sort, Arrays.equals, Arrays.fill (matching Lab 4 coverage).',
+            completed: false,
+          },
+          {
+            id: 'day1-java-3-task-5',
+            description: 'Scanner + reading arrays: Read n, then n ints into an array using Scanner, matching Lab 4 "ReadingArrayExample".',
             completed: false,
           },
         ],
@@ -344,12 +360,13 @@ export const studyDays: Day[] = [
       {
         id: 'day4-java-3',
         timeRange: '11:30–13:00',
-        title: 'Overriding Rules',
+        title: 'Overriding Rules & Method Overloading',
         topic: 'Java',
-        description: 'Valid vs invalid overriding scenarios',
+        description: 'Valid vs invalid overriding scenarios, overloading vs overriding distinction',
         completed: false,
         tasks: [
           { id: 'day4-java-3-task-1', description: '15 override scenarios: valid vs invalid', completed: false },
+          { id: 'day4-java-3-task-2', description: '10 overloading vs overriding ID questions: Identify if code shows overloading or overriding', completed: false },
         ],
       },
       {
