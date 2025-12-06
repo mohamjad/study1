@@ -286,6 +286,12 @@ export const studyDays: Day[] = [
         tasks: [
           { id: 'day2-linalg-1-task-1', description: 'Watch 3Blue1Brown Essence of Linear Algebra, Part 3 at 2x', completed: false },
         ],
+        flashcards: [
+          { id: 'linalg1', front: 'What is the span of a set of vectors?', back: 'The span is the set of all possible linear combinations of those vectors. Span{v₁, v₂, ..., vₖ} = {c₁v₁ + c₂v₂ + ... + cₖvₖ | cᵢ ∈ ℝ}.', known: false },
+          { id: 'linalg2', front: 'How do you test if vectors are linearly independent?', back: 'Put vectors as columns in a matrix, row reduce to RREF. If every column has a pivot → linearly independent. If any column lacks a pivot → linearly dependent.', known: false },
+          { id: 'linalg3', front: 'How do you check if vector b is in span{v₁, v₂, v₃}?', back: 'Set up augmented matrix [v₁ v₂ v₃ | b] and row reduce. If consistent (no row [0 0 0 | nonzero]) → b is in span. If inconsistent → b is not in span.', known: false },
+          { id: 'linalg4', front: 'What does it mean if vectors are linearly dependent?', back: 'At least one vector can be written as a linear combination of the others. Equivalently, there exists a nontrivial solution to c₁v₁ + c₂v₂ + ... + cₖvₖ = 0.', known: false },
+        ],
       },
       {
         id: 'day2-linalg-2',
@@ -429,6 +435,14 @@ export const studyDays: Day[] = [
         tasks: [
           { id: 'day3-linalg-1-task-1', description: 'Watch Khan Academy "Computing determinants" (~20 min at 2x)', completed: false },
         ],
+        flashcards: [
+          { id: 'linalg5', front: '2×2 determinant formula', back: 'For A = [[a, b], [c, d]], det(A) = ad - bc', known: false },
+          { id: 'linalg6', front: '3×3 determinant via cofactor expansion', back: 'det(A) = a₁₁C₁₁ + a₁₂C₁₂ + a₁₃C₁₃ where Cᵢⱼ = (-1)ⁱ⁺ʲMᵢⱼ and Mᵢⱼ is the minor (determinant of submatrix).', known: false },
+          { id: 'linalg7', front: 'What happens to det(A) if you swap two rows?', back: 'det(A) changes sign. If B is A with two rows swapped, det(B) = -det(A).', known: false },
+          { id: 'linalg8', front: 'What happens to det(A) if you multiply a row by k?', back: 'det(A) is multiplied by k. If B is A with row i multiplied by k, det(B) = k·det(A).', known: false },
+          { id: 'linalg9', front: 'What is det(A) if A has a row of zeros?', back: 'det(A) = 0. Also det(A) = 0 if A has two identical rows or is singular (non-invertible).', known: false },
+          { id: 'linalg10', front: 'det(AB) = ?', back: 'det(AB) = det(A)·det(B). Also det(A⁻¹) = 1/det(A) if A is invertible.', known: false },
+        ],
       },
       {
         id: 'day3-linalg-2',
@@ -549,6 +563,13 @@ export const studyDays: Day[] = [
         tasks: [
           { id: 'day3-linalg-4-task-1', description: 'Watch 3Blue1Brown Parts 6–7 (~1.5x speed)', completed: false },
         ],
+        flashcards: [
+          { id: 'linalg11', front: 'What is an eigenvalue?', back: 'A scalar λ such that Av = λv for some nonzero vector v. The vector v is called an eigenvector.', known: false },
+          { id: 'linalg12', front: 'How do you find eigenvalues?', back: 'Solve det(A - λI) = 0. This gives the characteristic polynomial. The roots are the eigenvalues.', known: false },
+          { id: 'linalg13', front: 'How do you find eigenvectors for a given eigenvalue λ?', back: 'Solve (A - λI)v = 0. The nonzero solutions form the eigenspace for λ.', known: false },
+          { id: 'linalg14', front: 'What does it mean if 0 is an eigenvalue?', back: 'A is singular (non-invertible). Equivalently, det(A) = 0. The null space of A contains the eigenvectors for λ = 0.', known: false },
+          { id: 'linalg15', front: 'For 2×2 matrix, trace and determinant in terms of eigenvalues', back: 'If eigenvalues are λ₁ and λ₂: trace(A) = λ₁ + λ₂ and det(A) = λ₁λ₂.', known: false },
+        ],
       },
       {
         id: 'day3-linalg-5',
@@ -633,6 +654,13 @@ export const studyDays: Day[] = [
         completed: false,
         tasks: [
           { id: 'day4-linalg-1-task-1', description: 'Watch 3Blue1Brown Part 2', completed: false },
+        ],
+        flashcards: [
+          { id: 'linalg16', front: 'Dot product formula', back: 'u·v = u₁v₁ + u₂v₂ + ... + uₙvₙ = Σᵢ uᵢvᵢ. Also u·v = |u||v|cos(θ) where θ is the angle between vectors.', known: false },
+          { id: 'linalg17', front: 'When are two vectors orthogonal?', back: 'When u·v = 0. Orthogonal means perpendicular (angle = 90°).', known: false },
+          { id: 'linalg18', front: 'Vector norm (magnitude) formula', back: '|u| = √(u·u) = √(u₁² + u₂² + ... + uₙ²)', known: false },
+          { id: 'linalg19', front: 'Projection of u onto v', back: 'projᵥ(u) = ((u·v)/(v·v))v. The scalar (u·v)/(v·v) is the component of u in the direction of v.', known: false },
+          { id: 'linalg20', front: 'Distance between two vectors', back: 'distance(u, v) = |u - v| = √((u - v)·(u - v))', known: false },
         ],
       },
       {
