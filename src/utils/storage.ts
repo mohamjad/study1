@@ -3,11 +3,25 @@ import type { Day, Progress } from '../types';
 const STORAGE_KEY = 'study-planner-data';
 const PROGRESS_KEY = 'study-planner-progress';
 const VERSION_KEY = 'study-planner-version';
+const POPUP_SHOWN_KEY = 'study-planner-popup-shown';
 const CURRENT_VERSION = '2.0.0'; // Increment this when data structure changes
 
 export const saveDays = (days: Day[]) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(days));
   localStorage.setItem(VERSION_KEY, CURRENT_VERSION); // Ensure version is set
+};
+
+export const checkVersionMismatch = (): boolean => {
+  const savedVersion = localStorage.getItem(VERSION_KEY);
+  const savedData = localStorage.getItem(STORAGE_KEY);
+  const popupShown = localStorage.getItem(POPUP_SHOWN_KEY);
+  
+  // Show popup if version mismatch AND data exists AND popup hasn't been shown for this version
+  return savedVersion !== CURRENT_VERSION && savedData !== null && popupShown !== CURRENT_VERSION;
+};
+
+export const markPopupShown = () => {
+  localStorage.setItem(POPUP_SHOWN_KEY, CURRENT_VERSION);
 };
 
 export const loadDays = (): Day[] | null => {
