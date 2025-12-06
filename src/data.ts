@@ -860,7 +860,7 @@ export const resources: Resource[] = [
     id: 'r13',
     title: 'Anton & Kaul, Elementary Linear Algebra 12e',
     purpose: 'Primary textbook for all linear algebra practice problems',
-    link: '',
+    link: 'https://www.studyhalo.com/media/resources/resources/MAT1503/Textbook/MAT1503_-_Prescribed_book.pdf',
     subject: 'Linear Algebra',
   },
 ];

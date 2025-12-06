@@ -87,9 +87,22 @@ function App() {
           <p className="text-gray-600 mb-1">
             Comprehensive 6-day study plan for ES1036 (Java) & NM1411 (Linear Algebra) exams
           </p>
-          <p className="text-sm text-gray-500 italic">
+          <p className="text-sm text-gray-500 italic mb-4">
             by Mohammed Amjad
           </p>
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg mb-4">
+            <div className="flex items-center gap-3">
+              <span className="text-blue-600 font-semibold">📚 Textbook:</span>
+              <a 
+                href="https://www.studyhalo.com/media/resources/resources/MAT1503/Textbook/MAT1503_-_Prescribed_book.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:text-blue-900 font-medium underline"
+              >
+                Anton & Kaul, Elementary Linear Algebra 12e (PDF)
+              </a>
+            </div>
+          </div>
         </header>
 
         <ProgressSummary progress={progress} />
