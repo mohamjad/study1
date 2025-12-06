@@ -11,17 +11,26 @@ export const saveDays = (days: Day[]) => {
 };
 
 export const loadDays = (): Day[] | null => {
-  // Check version - if mismatch, clear old data
   const savedVersion = localStorage.getItem(VERSION_KEY);
-  if (savedVersion !== CURRENT_VERSION) {
+  const savedData = localStorage.getItem(STORAGE_KEY);
+  
+  // Only clear if version mismatch AND data exists (don't clear on first load)
+  if (savedVersion !== CURRENT_VERSION && savedData) {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(PROGRESS_KEY);
-    localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
-    return null; // Force fresh data load
   }
   
-  const data = localStorage.getItem(STORAGE_KEY);
-  return data ? JSON.parse(data) : null;
+  // Set version if not set or if it was mismatched
+  if (savedVersion !== CURRENT_VERSION) {
+    localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
+  }
+  
+  // Return data only if version matches (or if no version was set before)
+  if (savedVersion === CURRENT_VERSION && savedData) {
+    return JSON.parse(savedData);
+  }
+  
+  return null; // Force fresh data load
 };
 
 export const saveProgress = (progress: Progress) => {
