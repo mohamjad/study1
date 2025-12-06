@@ -12,6 +12,7 @@ function App() {
     const saved = loadDays();
     return saved || studyDays;
   });
+  const [activeDay, setActiveDay] = useState(1);
 
   const progress = calculateProgress(days);
 
@@ -83,8 +84,11 @@ function App() {
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
             Study Planner - Java & Linear Algebra
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-1">
             Comprehensive 6-day study plan for ES1036 exams
+          </p>
+          <p className="text-sm text-gray-500 italic">
+            by Mohammed Amjad
           </p>
         </header>
 
@@ -93,19 +97,52 @@ function App() {
         <Resources resources={resources} />
 
         <div className="mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">Study Timeline</h2>
-          {days.map(day => (
-            <DayTimeline
-              key={day.dayNumber}
-              day={day}
-              onToggleTask={handleToggleTask}
-              onToggleFlashcard={handleToggleFlashcard}
-              onToggleBlockComplete={handleToggleBlockComplete}
-            />
-          ))}
-        </div>
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">Study Timeline</h2>
+          
+          {/* Tabs */}
+          <div className="flex flex-wrap gap-2 mb-6 border-b border-gray-300">
+            {days.map(day => (
+              <button
+                key={day.dayNumber}
+                onClick={() => setActiveDay(day.dayNumber)}
+                className={`px-4 py-2 font-semibold rounded-t-lg transition-colors ${
+                  activeDay === day.dayNumber
+                    ? 'bg-blue-600 text-white border-b-2 border-blue-600'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                }`}
+              >
+                Day {day.dayNumber} - {day.date}
+              </button>
+            ))}
+            <button
+              onClick={() => setActiveDay(0)}
+              className={`px-4 py-2 font-semibold rounded-t-lg transition-colors ${
+                activeDay === 0
+                  ? 'bg-blue-600 text-white border-b-2 border-blue-600'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+            >
+              Exam Strategy
+            </button>
+          </div>
 
-        <ExamDayStrategy />
+          {/* Tab Content */}
+          {activeDay === 0 ? (
+            <ExamDayStrategy />
+          ) : (
+            days
+              .filter(day => day.dayNumber === activeDay)
+              .map(day => (
+                <DayTimeline
+                  key={day.dayNumber}
+                  day={day}
+                  onToggleTask={handleToggleTask}
+                  onToggleFlashcard={handleToggleFlashcard}
+                  onToggleBlockComplete={handleToggleBlockComplete}
+                />
+              ))
+          )}
+        </div>
       </div>
     </div>
   );
